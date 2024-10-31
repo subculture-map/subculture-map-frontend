@@ -685,15 +685,15 @@
       }
 
       // 매장 데이터 분리
-      const resShopDatas = data.shop_list;
+      const resShopDatas = data.result.shop_list;
 
       // shopType 데이터 분리
-      data.shoptype_list.map(data => {
+      data.result.shoptype_list.map(data => {
         shopTypeMap.set(data.id, data.type);
       });
 
       // shopLocationType 데이터 분리
-      data.location_list.map(data => {
+      data.result.location_list.map(data => {
         shopLocationTypeMap.set(data.id, data.location);
       });
 
